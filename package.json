@@ -1,0 +1,15 @@
+{
+  "name": "typescript-practice",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "ts": "bun build index.ts --outdir dist",
+    "tsw": "bun build --watch index.ts --outdir dist"
+  },
+  "devDependencies": {
+    "bun-types": "^1.0.15"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
