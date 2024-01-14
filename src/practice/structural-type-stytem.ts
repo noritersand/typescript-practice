@@ -21,4 +21,4 @@ const color = { hex: "#187ABF" };
 // error TS2345: Argument of type '{ hex: string; }' is not assignable to parameter of type 'Point'.
 // Type '{ hex: string; }' is missing the following properties from type 'Point': x, y
 
-printPoint(color); 
+// printPoint(color); 
