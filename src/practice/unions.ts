@@ -24,3 +24,4 @@ let n2: myNumber2 = 1;
 n2 = '3';
 // n2 = 4; // error TS2322: Type '4' is not assignable to type 'myNumber2'.
 
+let arr2: myNumber2[] = [1, '2', 3]; // OK
