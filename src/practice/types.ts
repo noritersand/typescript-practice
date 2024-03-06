@@ -5,3 +5,4 @@ let getWaldo = (name: string): {
   return {name}
 };
 getWaldo('Waldo').age = 128;
+
