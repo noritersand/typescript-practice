@@ -8,8 +8,6 @@ abstract class Base {
  
 // const b = new Base(); // error TS2511: Cannot create an instance of an abstract class.
 
-class Derived extends Base {}
-
 class Derived extends Base {
   getName() {
     return "world";
