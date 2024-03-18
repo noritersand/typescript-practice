@@ -25,3 +25,19 @@ n2 = '3';
 // n2 = 4; // error TS2322: Type '4' is not assignable to type 'myNumber2'.
 
 let arr2: myNumber2[] = [1, '2', 3]; // OK
+
+// type Person = { name: string, age: number };
+// type Human = { breathing: boolean };
+
+// let waldo: Person | Human;
+
+waldo = {
+  name: 'waldo', 
+  age: 47,
+  breathing: true,
+};
+
+// waldo = {
+//   hello: 'Hello there!'
+//   // error TS2353: Object literal may only specify known properties, and 'hello' does not exist in type 'Person | Human'.
+// };
