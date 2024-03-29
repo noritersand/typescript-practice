@@ -1,4 +1,4 @@
-type Person = { name: string, age: number };
+type Person = { name: string; age: number };
 type Human = { breathing: boolean };
 
 let waldo: Person & Human;
