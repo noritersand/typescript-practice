@@ -15,7 +15,7 @@ class Derived extends Base {
 }
  
 const d = new Derived();
-d.printName();
+console.log(d.printName());
 
 // class Derived2 extends Base {} 
 // error TS18052: Non-abstract class 'Derived2' does not implement all abstract members of 'Base'

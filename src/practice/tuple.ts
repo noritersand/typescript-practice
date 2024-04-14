@@ -8,3 +8,5 @@ function calculateArea(dimensions: [number, number]): number {
 
 const area = calculateArea([3, 4]);
 console.log(area); // 출력: 12
+
+
