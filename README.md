@@ -10,8 +10,8 @@
 
 ```bash
 # tsc --build
-ts
+yarn build
 
 # tsc --build --watch
-tsw
+yarn start
 ```

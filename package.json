@@ -3,8 +3,8 @@
   "module": "index.ts",
   "type": "module",
   "scripts": {
-    "ts": "tsc --build ",
-    "tsw": "tsc --build --watch"
+    "build": "tsc --build ",
+    "start": "tsc --build --watch"
   },
   "dependencies": {
     "typescript": "^5.3.3"
