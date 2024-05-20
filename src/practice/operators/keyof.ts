@@ -11,7 +11,7 @@ interface BType {
 let foo3: keyof AType;
 foo3 = 'a';
 foo3 = 'b';
-// foo3 = 'c'; // error TS2322: Type '"c"' is not assignable to type 'keyof AType'.
+// foo3 = 'c'; // ⛔ error TS2322: Type '"c"' is not assignable to type 'keyof AType'.
 
 let foo4: keyof BType;
 foo4 = 'c';

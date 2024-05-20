@@ -1,12 +1,12 @@
 // // let foo: number = undefined; // not OK
-// // error TS2322: Type 'undefined' is not assignable to type 'number'.
+// // ⛔ error TS2322: Type 'undefined' is not assignable to type 'number'.
 
 // // const obj = { width: 10, height: 15 };
 // // const area = obj.width * obj.heigth; // typo in height
-// // error TS2551: Property 'heigth' does not exist on type '{ width: number; height: number; }'. 
+// // ⛔ error TS2551: Property 'heigth' does not exist on type '{ width: number; height: number; }'. 
 // // Did you mean 'height'?
 
-// // let a = (4 // error TS1005: ')' expected.
+// // let a = (4 // ⛔ error TS1005: ')' expected.
 
 // interface User {
 //   name: string;
@@ -19,7 +19,7 @@
 // };
 
 // // console.log(4 / []);
-// // error TS2363: The right-hand side of an arithmetic operation must be of type 
+// // ⛔ error TS2363: The right-hand side of an arithmetic operation must be of type 
 // // 'any', 'number', 'bigint' or an enum type.
 
 // class UserAccount {

@@ -6,7 +6,7 @@ abstract class Base {
   }
 }
  
-// const b = new Base(); // error TS2511: Cannot create an instance of an abstract class.
+// const b = new Base(); // ⛔ error TS2511: Cannot create an instance of an abstract class.
 
 class Derived extends Base {
   getName() {
@@ -18,10 +18,10 @@ const d = new Derived();
 console.log(d.printName());
 
 // class Derived2 extends Base {} 
-// error TS18052: Non-abstract class 'Derived2' does not implement all abstract members of 'Base'
+// ⛔ error TS18052: Non-abstract class 'Derived2' does not implement all abstract members of 'Base'
 
 // function greet(ctor: typeof Base) {
-  // const instance = new ctor(); // error TS2511: Cannot create an instance of an abstract class.
+  // const instance = new ctor(); // ⛔ error TS2511: Cannot create an instance of an abstract class.
   // instance.printName();
 // }
 

@@ -32,13 +32,13 @@ class Newbie {
   // public setAge(age: number): void {
   //   this.age = age;
   // }
-  // error TS2540: Cannot assign to 'age' because it is a read-only property.
+  // ⛔ error TS2540: Cannot assign to 'age' because it is a read-only property.
 }
 
 let noob = new Newbie('John', 20);
 noob.getName();
-// noob.name; // error TS2341: Property 'name' is private and only accessible within class 'Newbie'.
+// noob.name; // ⛔ error TS2341: Property 'name' is private and only accessible within class 'Newbie'.
 noob.setName('Waldo');
 noob.getName2();
 noob.setName2('Waldo2');
-// noob.#name; // error TS2339: Property '#name' does not exist on type 'Newbie'.
+// noob.#name; // ⛔ error TS2339: Property '#name' does not exist on type 'Newbie'.

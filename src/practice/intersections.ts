@@ -12,12 +12,12 @@ waldo = {
 // waldo = {
 //   name: 'waldo', 
 //   age: 47
-//   // error TS2322: Type '{ name: string; age: number; }' is not assignable to type 'Person & Human'.
+//   // ⛔ error TS2322: Type '{ name: string; age: number; }' is not assignable to type 'Person & Human'.
 //   // Property 'breathing' is missing in type '{ name: string; age: number; }' but required in type 'Human'.
 // };
 
 type conflicting = number & string;
 
 let foo1: conflicting;
-// foo1 = '123'; // error TS2322: Type 'string' is not assignable to type 'never'.
-// foo1 = 123; // error TS2322: Type 'number' is not assignable to type 'never'.
+// foo1 = '123'; // ⛔ error TS2322: Type 'string' is not assignable to type 'never'.
+// foo1 = 123; // ⛔ error TS2322: Type 'number' is not assignable to type 'never'.

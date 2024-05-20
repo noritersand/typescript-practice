@@ -3,7 +3,7 @@
 
 // type NumberArray = Array<number>;
 // let numArr: NumberArray = [1, 2, 3];
-// // numArr.push('4'); // error TS2345: Argument of type 'string' is not assignable to parameter of type 'number'.
+// // numArr.push('4'); // ⛔ error TS2345: Argument of type 'string' is not assignable to parameter of type 'number'.
 
 // type ObjectWithNameArray = Array<{ name: string }>;
 // let objArr: ObjectWithNameArray = [{ name: '1' }, { name: '2' }];
@@ -29,7 +29,15 @@ const backpack: Backpack<string> = {
 
 const object = backpack.get();
 console.log(object); // []
+
 backpack.add('23');
 console.log(object); // ['23']
 
-// backpack.add(23); // error TS2345: Argument of type 'number' is not assignable to parameter of type 'string'.
+// backpack.add(23); // ⛔ error TS2345: Argument of type 'number' is not assignable to parameter of type 'string'.
+
+function identity<T>(arg: T) {
+  console.log(arg);
+}
+identity<number>(1234);
+identity<string>('qwer');
+// identity<boolean>('false'); // ⛔ error TS2345: Argument of type 'string' is not assignable to parameter of type 'boolean'.
