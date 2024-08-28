@@ -41,3 +41,6 @@ waldo = {
 //   hello: 'Hello there!'
 //   // ⛔ error TS2353: Object literal may only specify known properties, and 'hello' does not exist in type 'Person | Human'.
 // };
+
+// 타입 별칭 생략하기
+let arr3: (RegExp | string)[] = [/\d/, '-', /\d/];
