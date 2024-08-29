@@ -1,23 +1,23 @@
-type Person = { name: string; age: number };
-type Human = { breathing: boolean };
+// type Person = { name: string; age: number };
+// type Human = { breathing: boolean };
 
-let waldo: Person & Human;
-
-waldo = {
-  name: 'waldo', 
-  age: 47,
-  breathing: true,
-}; // O
+// let waldo: Person & Human;
 
 // waldo = {
 //   name: 'waldo', 
-//   age: 47
-//   // ⛔ error TS2322: Type '{ name: string; age: number; }' is not assignable to type 'Person & Human'.
-//   // Property 'breathing' is missing in type '{ name: string; age: number; }' but required in type 'Human'.
-// };
+//   age: 47,
+//   breathing: true,
+// }; // O
 
-type conflicting = number & string;
+// // waldo = {
+// //   name: 'waldo', 
+// //   age: 47
+// //   // ⛔ error TS2322: Type '{ name: string; age: number; }' is not assignable to type 'Person & Human'.
+// //   // Property 'breathing' is missing in type '{ name: string; age: number; }' but required in type 'Human'.
+// // };
 
-let foo1: conflicting;
-// foo1 = '123'; // ⛔ error TS2322: Type 'string' is not assignable to type 'never'.
-// foo1 = 123; // ⛔ error TS2322: Type 'number' is not assignable to type 'never'.
+// type conflicting = number & string;
+
+// let foo1: conflicting;
+// // foo1 = '123'; // ⛔ error TS2322: Type 'string' is not assignable to type 'never'.
+// // foo1 = 123; // ⛔ error TS2322: Type 'number' is not assignable to type 'never'.
