@@ -16,8 +16,8 @@
 // //   // Property 'breathing' is missing in type '{ name: string; age: number; }' but required in type 'Human'.
 // // };
 
-// type conflicting = number & string;
+// type Conflicting = number & string;
 
-// let foo1: conflicting;
+// let foo1: Conflicting;
 // // foo1 = '123'; // ⛔ error TS2322: Type 'string' is not assignable to type 'never'.
 // // foo1 = 123; // ⛔ error TS2322: Type 'number' is not assignable to type 'never'.
