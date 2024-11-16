@@ -41,3 +41,18 @@ function identity<T>(arg: T) {
 identity<number>(1234);
 identity<string>('qwer');
 // identity<boolean>('false'); // ⛔ error TS2345: Argument of type 'string' is not assignable to parameter of type 'boolean'.
+
+// let map = new Map<string, string>();
+// map.set('key1', true); // error TS2345: Argument of type 'boolean' is not assignable to parameter of type 'string'.
+
+// Promise 제네릭 예시
+function resolveAfter2Seconds(): Promise<Map<string, string>> {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      let map = new Map<string, string>();
+      map.set('key1', 'value1');
+      resolve(map);
+      // resolve('done'); // ⛔ error TS2345: Argument of type 'string' is not assignable to parameter of type 'Map<string, string> | PromiseLike<Map<string, string>>'.
+    }, 2000);
+  });
+}

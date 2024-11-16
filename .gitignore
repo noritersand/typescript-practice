@@ -177,6 +177,10 @@ dist
 # build
 build
 
-
 package-lock.json
+
+# Yarn
 yarn.lock
+.yarn
+.pnp.cjs
+.pnp.loader.mjs
