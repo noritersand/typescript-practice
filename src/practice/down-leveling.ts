@@ -1,2 +1,4 @@
-let person = 'John Doe';
-`Hello ${person}.`;
+{
+  let person = 'John Doe';
+  `Hello ${person}.`;
+}
